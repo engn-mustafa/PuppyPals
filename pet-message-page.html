@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <META name="viewport" content="width=device-width , initial-scale=1.0">
+            
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">    
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <link rel="stylesheet" href="assets/css/style.css">
+                <title>
+                     Message | PuppyPal
+                </title>
+            <!---->
+            
+    </head>
+  
+    <header>
+        <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a href="landing-page-with-profile.html">
+                    <h1 class="title m-3 ml-5 is-underlined has-text-white">PuppyPals</h1>
+                    </a>
+              <!-- <h1 class="title m-3 ml-5 is-underlined">PuppyPals</h1> -->
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a href="dogRegistration.html" class="button is-ghost has-text-white">
+                      Register a dog
+                    </a>
+                    <a href="search.html" class="button is-ghost has-text-white">
+                      Search
+                    </a>
+                    <a href="landing-page-with-profile.html" class="button is-ghost has-text-white">
+                      Profile
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+        <!--- defining the page background color and layout as column-->
+        <main class="hero is-light custom-main" style="background-image: url('./assets/images/backgrounds/prints2.png'); background-size: cover;">
+        <div class="hero">
+            <div class="hero body">  
+                <div class="columns">
+                    <div class="column is-centered ">
+                        <div class="column is-half is-offset-one-quarter"> 
+                            <div class="card-image">
+                                <!-- <figure class="">
+                                    
+                                    <img src="assets\images\dogs-louis-wain-print-1595944261EHC.jpg" alt="Placeholder image">
+                                </figure> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  <!--the input entry section--> 
+                <div class="columns">
+                    <div class="column is-centered ">
+                        <div class="column is-one-third is-offset-one-third"> 
+                            <form action=""  class="box">
+                                <form>
+                                    <div class="content">
+                                        <h2 id="dogName" class="title is-2 has-text-centered">Other dog</h2>
+                                        <figure class="image is-4by3" style="padding: 100px;">
+                                            <img id="dogImageResponse" class="m-auto" alt="Description" src="">
+                                          </figure>          
+                                </form>
+                                <form>
+                                    <div class="field">
+                                        <label class="label">Your dog</label>
+                                            <div class="control">
+                                                <!-- <input class="input is-small" type="text" id="dogName" placeholder="Enter your dogs name"> -->
+                                                <div class="select">
+                                                    <select id="yourDogEL">
+                                                    </select>
+                                                  </div>
+                                            </div>
+                                    </div>
+                                </form>
+                                            <!-- -->
+                                <form>
+                                    <div class="field">
+                                        <label class="label mt-3">Your email</label>
+                                        <div class="control">
+                                            <input class="input is-small" type="email" id="email" placeholder="email@website.com">
+                                        </div>
+                                    </div>
+                                </form>
+                                            <!-- -->
+                                <form>
+                                    <div class="field">
+                                        <label class="label mt-3">Proposed Date:</label>
+                                        <input class="date" type="date" id="date" name="dd/mm/yyyy"/>
+                                    </div>
+                                </form>
+                                        <!-- -->
+                                <form>
+                                    <div class="field">
+                                        <label class="label mt-3">Message</label>
+                                        <div class="control">
+                                            <textarea class="textarea is-small" placeholder="Enter your message here"></textarea>
+                                        </div>
+                                    </div>
+                                </form>
+                                        <!-- -->
+                                    <div class="field is-grouped">
+                                        <div class="control mt-3">
+                                            <button class="button is-link is-rounded" id="send">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div> 
+
+        <div class="notification is-primary has-text-centered hideBlock">
+            <button class="delete"></button>
+            Message Sent
+          </div>
+        </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script src="dog.js"></script>
+    </body>
+</html>

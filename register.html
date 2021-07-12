@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | PuppyPals</title>
+
+    <!-- BULMA Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Link to Style Sheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <main>
+
+    <!-- Login container -->
+    <section class="hero has-bg-img is-light is-fullheight" style="background-image: url('./assets/images/backgrounds/runningDog.png'); background-size: cover;">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                        <form action="" class="box">
+                         
+                                    <form>
+                                        <h1 class="title is-3">Create Account</h1>
+                                            <div class="field">
+                                                <label class="label">Username</label>
+                                                    <div class="control has-icons-left has-icons-right">
+                                                        <input class="input" id="username" type="text" placeholder="Enter username">
+                                                            <span class="icon is-small is-left">
+                                                                <i class="fa fa-user"></i>
+                                                            </span>
+                                                    </div>
+                                            </div>
+                                            
+                                            <div class="field">
+                                                <label class="label">Email</label>
+                                                    <div class="control has-icons-left has-icons-right">
+                                                        <input class="input" id="email" type="email" placeholder="Enter email">
+                                                            <span class="icon is-small is-left">
+                                                                <i class="fa fa-envelope"></i>
+                                                            </span>
+                                                    </div>
+                                            </div>
+
+                                            <div class="field">
+                                                <label class="label">Suburb</label>
+                                                    <div class="control has-icons-left has-icons-right">
+                                                        <input class="input" id="location" type="text" placeholder="Enter suburb">
+                                                            <span class="icon is-small is-left">
+                                                                <i class="fa fa-location-arrow"></i>
+                                                            </span>
+                                                    </div>
+                                            </div>
+
+                                            <div class="field">
+                                                <label class="label">Password</label>
+                                                    <div class="control has-icons-left has-icons-right">
+                                                        <input class="input" id="password" type="password" placeholder="Enter password">
+                                                            <span class="icon is-small is-left">
+                                                                <i class="fa fa-lock"></i>
+                                                            </span>
+                                                    </div>
+                                            </div>
+
+                                            <div class="field">
+                                                <label class="label">Confirm Password</label>
+                                                    <div class="control has-icons-left has-icons-right">
+                                                        <input class="input" id="confirm-password" type="password" placeholder="Confirm password">
+                                                            <span class="icon is-small is-left">
+                                                                <i class="fa fa-lock"></i>
+                                                            </span>
+                                                            <p id="alert"></p>
+                                                    </div>
+                                            </div>
+
+                                            <!-- Register button -->
+                                            <div class="field">
+                                                <button  class="button is-fullwidth"  id="register" >Register!</button>
+                                            </div>
+                                    </form>
+                        </form>        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer class="footer p-2 custom-footer">
+        <div class="has-text-centered">
+          <a href="index.html">
+            <p>PuppyPals</p>
+          </a>
+            
+        </div>
+    </footer>
+
+    <!-- Added JS -->
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

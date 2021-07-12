@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Profile | PuppyPals </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+      <header>
+        <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <h1 class="title m-3 ml-5 is-underlined has-text-white">PuppyPals</h1>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">
+                    <a href="dogRegistration.html" class="button is-ghost has-text-white">
+                      Register a dog
+                    </a>
+                    <a href="search.html" class="button is-ghost has-text-white">
+                      Search
+                    </a>
+                    <a href="index.html" class="button is-ghost has-text-white">
+                      Log out
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+        <main class="custom-main">
+
+            <section class="hero-has-navbar is-link">
+                <div class="hero-body has-text-centered">
+                    <h1 id="userHeading" class="title">Welcome User!</h1>
+                    <p class="subtitle">To your Puppy Pal Profile</p>
+                </div>
+            </section>
+
+            <section class="container mt-5">
+
+              <div class="columns features">
+
+                <div class="column is-6 is-flex is-flex-direction-column">
+                  <div class="card is-flex-grow-1">
+                    <div class="card-content">
+                      <div id="displayDogs" class="content">
+                        <h1 class="title">Your Puppy's!</h1>                                   
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="column is-6">
+                  <div class="card">
+                    <div class="card-content">
+                      <div class="content">
+
+                        <div class="m-2">
+                          <h1 class="title">Simple tips to get started!</h1>
+                            <div class="m-2">
+                              <p class="subtitle">1. Register your four legged friend/s</p>
+                              <p class="subtitle">2. Search your local area</p>
+                              <p class="subtitle">3. Connect with your furr-ever friend</p>
+                              <p class="subtitle">4. Enjoy!</p>
+                            </div>
+                            <a href="dogRegistration.html">
+                          <h1 class="title is-4 mt-3">Click here to get started!</h1>
+                        </a>
+                      </div>
+                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </section>          
+        </main> 
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/profile.js"></script>
+
+     </body>
+</html>
